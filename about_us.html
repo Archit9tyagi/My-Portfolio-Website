@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>About Me - Archit Tyagi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111318] dark:text-white font-display">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+        <!-- Top Navigation -->
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] dark:border-b-[#2a3140] bg-white/80 dark:bg-[#101622]/80 backdrop-blur-md px-10 py-3">
+            <div class="flex items-center gap-4 text-[#111318] dark:text-white">
+                <div class="size-6 text-primary">
+                    <span class="material-symbols-outlined !text-2xl">code</span>
+                </div>
+                <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Archit Tyagi</h2>
+            </div>
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+                <nav class="flex items-center gap-9">
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                        href="index.html">Home</a>
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                        href="index.html#work">Portfolio</a>
+                    <a class="text-primary text-sm font-medium leading-normal" href="about_us.html">About</a>
+                    <a class="text-sm font-medium leading-normal hover:text-primary transition-colors"
+                        href="contact_me.html">Contact</a>
+                </nav>
+                <a href="contact_me.html"
+                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                    <span class="truncate">Let's Talk</span>
+                </a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobileMenuBtn" class="text-[#111318] dark:text-white">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-white dark:bg-[#101622] border-t border-[#f0f2f4] dark:border-[#222831]">
+            <div class="flex flex-col px-4 py-4 gap-4">
+                <a class="text-sm font-medium hover:text-primary transition-colors py-2" href="index.html">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors py-2"
+                    href="index.html#work">Portfolio</a>
+                <a class="text-sm font-medium text-primary py-2" href="about_us.html">About</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors py-2"
+                    href="contact_me.html">Contact</a>
+                <a href="contact_me.html"
+                    class="flex cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+
+        <main class="flex-1">
+            <div class="layout-container flex h-full grow flex-col">
+                <div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+                    <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+
+                        <!-- Hero Section -->
+                        <section class="@container mb-12">
+                            <div
+                                class="flex flex-col-reverse gap-6 py-6 md:py-10 @[480px]:gap-8 @[864px]:flex-row @[864px]:items-center">
+                                <div class="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 flex-1">
+                                    <div class="flex flex-col gap-2 text-left">
+                                        <div
+                                            class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3 py-1 text-primary w-fit mb-2">
+                                            <span class="text-xs font-bold uppercase tracking-wider">About Me</span>
+                                        </div>
+                                        <h1
+                                            class="text-[#111318] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                            Hi, I'm Archit Tyagi.
+                                        </h1>
+                                        <h2
+                                            class="text-[#637588] dark:text-[#9ca3af] text-lg font-normal leading-relaxed">
+                                            Hello, I'm Archit Tyagi. I'm a Computer Science student designing
+                                            intelligent systems and data-driven solutions through AI & Machine Learning,
+                                            backed by strong Python development skills and practical project experience.
+                                            I'm passionate about clean code and innovative design.
+                                        </h2>
+                                    </div>
+                                    <div class="flex flex-wrap gap-4">
+                                        <a href="Resume (3).pdf" download
+                                            class="flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20">
+                                            <span class="material-symbols-outlined mr-2 text-[20px]">download</span>
+                                            <span class="truncate">Download CV</span>
+                                        </a>
+                                        <div class="flex gap-2">
+                                            <a class="size-12 flex items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] text-[#111318] dark:text-white hover:bg-[#e0e2e4] dark:hover:bg-[#3a4150] transition-colors"
+                                                href="mailto:archittyagi@example.com">
+                                                <span class="material-symbols-outlined">alternate_email</span>
+                                            </a>
+                                            <a class="size-12 flex items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] text-[#111318] dark:text-white hover:bg-[#e0e2e4] dark:hover:bg-[#3a4150] transition-colors"
+                                                href="https://github.com/Archit9tyagi" target="_blank">
+                                                <span class="material-symbols-outlined">code</span>
+                                            </a>
+                                            <a class="size-12 flex items-center justify-center rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] text-[#111318] dark:text-white hover:bg-[#e0e2e4] dark:hover:bg-[#3a4150] transition-colors"
+                                                href="https://www.linkedin.com/in/archit-tyagi-389b8432b/"
+                                                target="_blank">
+                                                <span class="material-symbols-outlined">work</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full @[864px]:w-1/2 flex justify-center @[864px]:justify-end">
+                                    <div
+                                        class="relative w-full max-w-[280px] sm:max-w-[350px] md:max-w-[400px] aspect-square rounded-2xl overflow-hidden shadow-2xl bg-[#f0f2f4] dark:bg-[#2a3140]">
+                                        <img src="my_images/p1.png" alt="Archit Tyagi"
+                                            class="w-full h-full object-cover" />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Stats Section -->
+                        <section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+                            <div
+                                class="flex flex-col items-center justify-center p-6 bg-white dark:bg-[#1e2430] rounded-xl shadow-sm border border-[#f0f2f4] dark:border-[#2a3140]">
+                                <span class="text-3xl md:text-4xl font-black text-primary mb-1">2+</span>
+                                <span class="text-sm text-[#637588] dark:text-[#9ca3af] font-medium text-center">Years
+                                    Learning</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-6 bg-white dark:bg-[#1e2430] rounded-xl shadow-sm border border-[#f0f2f4] dark:border-[#2a3140]">
+                                <span class="text-3xl md:text-4xl font-black text-primary mb-1">10+</span>
+                                <span
+                                    class="text-sm text-[#637588] dark:text-[#9ca3af] font-medium text-center">Projects
+                                    Built</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-6 bg-white dark:bg-[#1e2430] rounded-xl shadow-sm border border-[#f0f2f4] dark:border-[#2a3140]">
+                                <span class="text-3xl md:text-4xl font-black text-primary mb-1">6+</span>
+                                <span
+                                    class="text-sm text-[#637588] dark:text-[#9ca3af] font-medium text-center">Technologies</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-6 bg-white dark:bg-[#1e2430] rounded-xl shadow-sm border border-[#f0f2f4] dark:border-[#2a3140]">
+                                <span class="text-3xl md:text-4xl font-black text-primary mb-1">∞</span>
+                                <span class="text-sm text-[#637588] dark:text-[#9ca3af] font-medium text-center">Lines
+                                    of Code</span>
+                            </div>
+                        </section>
+
+                        <!-- Skills Section -->
+                        <section class="mb-16">
+                            <div class="flex items-center gap-2 mb-6 px-4">
+                                <span class="material-symbols-outlined text-primary">psychology</span>
+                                <h2
+                                    class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                    My Skills</h2>
+                            </div>
+                            <div
+                                class="bg-white dark:bg-[#1e2430] rounded-2xl p-6 md:p-8 shadow-sm border border-[#f0f2f4] dark:border-[#2a3140]">
+                                <div class="mb-6">
+                                    <h3
+                                        class="text-sm font-bold text-[#637588] dark:text-[#9ca3af] uppercase tracking-wider mb-4">
+                                        Development</h3>
+                                    <div class="flex gap-3 flex-wrap">
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">terminal</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">Python</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">language</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">Django</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">show_chart</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">Streamlit</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">javascript</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">JavaScript</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">code</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">C/C++</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">css</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">HTML/CSS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3
+                                        class="text-sm font-bold text-[#637588] dark:text-[#9ca3af] uppercase tracking-wider mb-4">
+                                        Tools & Platforms</h3>
+                                    <div class="flex gap-3 flex-wrap">
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">source</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">Git</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">deployed_code</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">VS Code</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">database</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">SQLite</p>
+                                        </div>
+                                        <div
+                                            class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f2f4] dark:bg-[#2a3140] hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-colors pl-4 pr-4 border border-transparent hover:border-primary/30 cursor-default">
+                                            <span class="material-symbols-outlined text-[18px]">science</span>
+                                            <p class="text-[#111318] dark:text-white text-sm font-medium">Machine
+                                                Learning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Experience Section -->
+                        <section class="mb-16">
+                            <div class="flex items-center gap-2 mb-8 px-4">
+                                <span class="material-symbols-outlined text-primary">history_edu</span>
+                                <h2
+                                    class="text-[#111318] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">
+                                    Learning Journey</h2>
+                            </div>
+                            <div
+                                class="relative border-l-2 border-[#e5e7eb] dark:border-[#2a3140] ml-6 md:ml-10 space-y-12">
+
+                                <!-- Experience Item 1 -->
+                                <div class="relative pl-8 md:pl-12">
+                                    <div
+                                        class="absolute -left-[9px] top-0 size-[18px] rounded-full border-4 border-white dark:border-[#101622] bg-primary">
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+                                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">Python & Django
+                                            Development</h3>
+                                        <span
+                                            class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">2024
+                                            - Present</span>
+                                    </div>
+                                    <div class="text-sm font-semibold text-[#637588] dark:text-[#9ca3af] mb-3">
+                                        Self-Taught Developer</div>
+                                    <p class="text-[#637588] dark:text-[#9ca3af] leading-relaxed max-w-2xl">
+                                        Built production-ready web applications including AcadVault (educational
+                                        platform) and IPL Win Predictor (ML analytics app). Gained hands-on experience
+                                        with Django framework, database design, user authentication, and deployment.
+                                    </p>
+                                </div>
+
+                                <!-- Experience Item 2 -->
+                                <div class="relative pl-8 md:pl-12">
+                                    <div
+                                        class="absolute -left-[9px] top-0 size-[18px] rounded-full border-4 border-white dark:border-[#101622] bg-[#cbd5e1] dark:bg-[#4b5563]">
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+                                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">Web Development
+                                            Fundamentals</h3>
+                                        <span
+                                            class="text-sm font-medium text-[#637588] dark:text-[#9ca3af] bg-[#f0f2f4] dark:bg-[#2a3140] px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Apr
+                                            2024 - Aug 2024</span>
+                                    </div>
+                                    <div class="text-sm font-semibold text-[#637588] dark:text-[#9ca3af] mb-3">HTML,
+                                        CSS, JavaScript</div>
+                                    <p class="text-[#637588] dark:text-[#9ca3af] leading-relaxed max-w-2xl">
+                                        Mastered modern web development through building responsive websites and
+                                        interactive applications. Developed strong foundations in semantic HTML, CSS
+                                        Grid/Flexbox, DOM manipulation, and asynchronous JavaScript.
+                                    </p>
+                                </div>
+
+                                <!-- Experience Item 3 -->
+                                <div class="relative pl-8 md:pl-12">
+                                    <div
+                                        class="absolute -left-[9px] top-0 size-[18px] rounded-full border-4 border-white dark:border-[#101622] bg-[#cbd5e1] dark:bg-[#4b5563]">
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-2">
+                                        <h3 class="text-lg font-bold text-[#111318] dark:text-white">Programming
+                                            Foundations</h3>
+                                        <span
+                                            class="text-sm font-medium text-[#637588] dark:text-[#9ca3af] bg-[#f0f2f4] dark:bg-[#2a3140] px-3 py-1 rounded-full w-fit mt-1 sm:mt-0">Oct
+                                            2023 - May 2024</span>
+                                    </div>
+                                    <div class="text-sm font-semibold text-[#637588] dark:text-[#9ca3af] mb-3">C & C++
+                                        Programming</div>
+                                    <p class="text-[#637588] dark:text-[#9ca3af] leading-relaxed max-w-2xl">
+                                        Built strong foundation in computer science fundamentals including data
+                                        structures, algorithms, memory management, and object-oriented programming.
+                                        Created various applications including calculators and game systems.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="border-t border-solid border-t-[#f0f2f4] dark:border-t-[#2a3140] py-12 px-10 bg-white dark:bg-[#101622]">
+            <div class="flex flex-col items-center justify-center gap-6 max-w-[960px] mx-auto">
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-[#111318] dark:text-white mb-2">Ready to start a project?</h2>
+                    <p class="text-[#637588] dark:text-[#9ca3af]">Let's collaborate and bring your ideas to life.</p>
+                </div>
+                <a href="contact_me.html"
+                    class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-8 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                    Contact Me
+                </a>
+                <div class="flex gap-6 mt-4">
+                    <a class="text-[#637588] dark:text-[#9ca3af] hover:text-primary transition-colors"
+                        href="mailto:archittyagi@example.com">
+                        <span class="material-symbols-outlined">alternate_email</span>
+                    </a>
+                    <a class="text-[#637588] dark:text-[#9ca3af] hover:text-primary transition-colors"
+                        href="https://github.com/Archit9tyagi" target="_blank">
+                        <span class="material-symbols-outlined">code</span>
+                    </a>
+                    <a class="text-[#637588] dark:text-[#9ca3af] hover:text-primary transition-colors"
+                        href="https://www.linkedin.com/in/archit-tyagi-389b8432b/" target="_blank">
+                        <span class="material-symbols-outlined">work</span>
+                    </a>
+                </div>
+                <p class="text-xs text-[#9ca3af] mt-4">© 2024 Archit Tyagi. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

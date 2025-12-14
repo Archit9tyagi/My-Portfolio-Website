@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archit's Portfolio</title>
+    <style>
+        body {
+            background-color: #000080; /* Original blue background */
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Container Layout */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left-side {
+            text-align: left;
+        }
+
+        .right-side {
+            text-align: right;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .passionate {
+            font-size: 18px;
+        }
+
+        .image {
+            width: 300px;
+            border-radius: 50%;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Footer Style */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366; /* Darker blue background for footer */
+            color: white;
+        }
+
+        footer a {
+            color: white; /* Email link color */
+            text-decoration: none;
+        }
+
+        /* Media Query for Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skill-icon {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact_me.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="left-side">
+                <div class="name">Archit Tyagi</div>
+                <div class="passionate">Passionate about web development and design.</div>
+            </div>
+            <div class="right-side">
+                <h2>Bio</h2>
+                <p>I am passionate about solving complex problems through technology. With a strong foundation in programming, algorithms, data structures, and software development.</p>
+            </div>
+        </section>
+
+        <section class="learning-section">
+            <h2>Currently Learning</h2>
+            <p>Expanding my knowledge in advanced web development frameworks and AI/ML concepts.</p>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <div>
+                <img src="my_images/3426526.jpg" alt="Front End Development" class="skill-icon">
+                <p>Front End Developer</p>
+            </div>
+            <div>
+                <img src="my_images/Python-logo-notext.svg.png" alt="Python Programming" class="skill-icon">
+                <p>Python Programming</p>
+            </div>
+            <div>
+                <img src="my_images/CPP-Language.png" alt="C++ Programming" class="skill-icon">
+                <p>C++ Programming</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:archittyagi462@gmail.com">archittyagi462@gmail.com</a></p>
+    </footer>
+</body>
+</html>
